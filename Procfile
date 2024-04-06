@@ -1,1 +1,1 @@
-RiZoeLXSpam: python -m main
+worker: python3 -m spambot
