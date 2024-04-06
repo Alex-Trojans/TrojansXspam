@@ -1,1 +1,1 @@
-: python -m main.py
+RiZoelx: python -m main.py
