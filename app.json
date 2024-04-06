@@ -1,5 +1,5 @@
 {
-      "name": "SpamBot - RiZoeL",
+      "name": "SpamBot - Trojans",
       "description": "A telethon Based Span Bots With Many Cmds Fast And Stable",
       "logo": "https://telegra.ph/file/ec832fc9107fd21edfee3.jpg",
       "keywords": [
@@ -9,7 +9,7 @@
         "RiZoeLXSpam",
         "SpamBots"
       ],   
-  "repository": "https://github.com/RiZoeLX/SpamX",
+  "repository": "https://github.com/Alex-Trojans/TrojansXspam",
   "website": "https://github.com/RiZoeLX",
   "success_url": "https://t.me/RiZoeLX",
   "env": {
