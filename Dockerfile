@@ -1,13 +1,17 @@
-FROM sandy1709/catuserbot:alpine
+FROM nikolaik/python-nodejs:python3.9-nodejs18
 
-#clonning repo 
-RUN git clone https://github.com/MrRizoel/RiZoeLXSpam.git /root/RiZoeLXSpam
-#working directory 
-WORKDIR /root/RiZoeLXSpam
+RUN apt-get update -y && apt-get upgrade -y \
 
-# Install requirements
-RUN pip3 install -U -r requirements.txt
+    && apt-get install -y --no-install-recommends ffmpeg \
 
-ENV PATH="/home/RiZoeLXSpam/bin:$PATH"
+    && apt-get clean \
 
-CMD ["python3","-m","RiZoeLXSpam"]
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app/
+
+WORKDIR /app/
+
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+
+CMD ["bash","start.sh"]
