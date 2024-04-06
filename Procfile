@@ -1,1 +1,1 @@
-worker: python3 -m RiZoeLX
+worker: python3 -m spambot
