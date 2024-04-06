@@ -1,1 +1,1 @@
-RiZoelx: python -m main.py
+RiZoeLXSpam: python -m main.py
